@@ -1,25 +1,69 @@
 <!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>陳品翰的個人網站</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>陳品翰的個人網站</title>
 </head>
 <body>
-    <h1>你好，這是我的第一個網頁</h1>
-    <p>我是淡江大學的學生，正在學習網頁程式設計。</p>
+    <!-- 網頁頭部與導覽列 -->
+    <header>
+        <h1>你好，這是我的第一個網頁</h1>
+        <nav>
+            <a href="index.html">首頁</a> | 
+            <a href="about.html">關於我</a>
+        </nav>
+    </header>
 
-    <!-- 這是超連結與圖片 -->
-    <p>去學校網站：<a href="https://www.tku.edu.tw/" target="_blank" rel="noreferrer">淡江大學</a></p>
-    <p>寄信給我：<a href="mailto:leo20060526@gmail.com">寄信給我</a></p>
-    <img src="images/profile.jpg" alt="我的個人照片">
-    
-    <!-- 這是第七大題要加的清單 -->
-    <h2>我的興趣與專長</h2>
-    <ul>
-        <li>打遊戲</li>
-        <li>攝影</li>
-        <li>旅遊</li>
-    </ul>
+    <!-- 網頁主要內容區 -->
+    <main>
+        <section>
+            <p>我是淡江大學資管系的學生，正在學習網頁程式設計。</p>
+            
+            <!-- 外部連結與信箱 -->
+            <p>去學校網站：<a href="https://www.tku.edu.tw/" target="_blank" rel="noreferrer">淡江大學</a></p>
+            <p>寄信給我：<a href="mailto:leo20060526@gmail.com">寄信給我</a></p>
+            
+            <!-- 個人照片 -->
+            <img src="images/profile.jpg" alt="我的個人照片">
+
+            <!-- 興趣清單 -->
+            <h2>我的興趣與專長</h2>
+            <ul>
+                <li>打遊戲</li>
+                <li>攝影</li>
+                <li>旅遊</li>
+            </ul>
+
+            <!-- 至少三列資料的表格 (包含 thead 跟 tbody 總共 3 個 <tr>) -->
+            <h2>本學期課表精選</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>節次</th>
+                        <th>星期三</th>
+                        <th>星期四</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>第九節</td>
+                        <td>網路程式設計 (陳有科)</td>
+                        <td>組織管理 (廖崇硯)</td>
+                    </tr>
+                    <tr>
+                        <td>第十節</td>
+                        <td>進階程式設計 (林仁祥)</td>
+                        <td>無</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <!-- 網頁頁尾 -->
+    <footer>
+        <p>© 2026 陳品翰</p>
+    </footer>
 </body>
 </html>
